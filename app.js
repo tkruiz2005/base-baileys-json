@@ -17,7 +17,7 @@ const fakeHTTPMenu = async () => {
   console.log('⚡ Server request!')
   await delay(1500)
   console.log('⚡ Server return!')
-  return Promise.resolve([{ body: 'Arepas' }, { body: 'Empanadas' }])
+  return Promise.resolve([{ body: 'Fideos al pesto' }, { body: 'Empanadas arabes' }])
 }
 
 /***
@@ -53,7 +53,7 @@ const flujoPedido = addKeyword(['pedido', 'pedir']).addAnswer(
 )
 
 const conversacionPrincipal = addKeyword(['hola', 'ole', 'buenas'])
-  .addAnswer('Bienvenido al restaurante *La cuchara de palo 🙌*')
+  .addAnswer('Bienvenido al *Bar del Barba 🙌*')
   .addAnswer(
       `El menu del día es el siguiente`,
       null,
